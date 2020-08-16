@@ -48,7 +48,7 @@ class Saved extends Component {
                         <Card title="Saved Books" icon="download">
                             {this.state.books.length ? (
                                 <List>
-                                    {this.this.state.books.map(book => (
+                                    {this.state.books.map(book => (
                                         <Book
                                             key={book._id}
                                             title={book.title}

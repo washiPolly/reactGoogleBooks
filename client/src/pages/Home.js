@@ -84,7 +84,7 @@ class Home extends Component {
                         <Card title="Results">
                             {this.state.books.length ? (
                                 <List>
-                                    {this.this.state.books.map(book => (
+                                    {this.state.books.map(book => (
                                         <Book
                                             key={book.id}
                                             title={book.volumeInfo.title}
