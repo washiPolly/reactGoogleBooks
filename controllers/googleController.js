@@ -22,7 +22,7 @@ module.exports = {
 
                 )
             )
-            .then(apiBooks => apiBooks.fulter(apiBook =>
+            .then(apiBooks => apiBooks.filter(apiBook =>
                 dbBooks.every(dbBook => dbNook / googleId.toString() !== apiBook.id
                 )
             )

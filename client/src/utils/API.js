@@ -5,13 +5,13 @@ export default {
   // searchBooks: function () {
   //   return axios.get("")
   // },
-  // Gets all books
-  getBooks: function () {
-    return axios.get("/api/books");
+  // Gets all books from Google API
+  getBooks: function (q) {
+    return axios.get("/api/google", { params: { q: "title:" + q } });
   },
   // Gets the book with the given id
-  getBook: function (id) {
-    return axios.get("/api/books/" + id);
+  getSavedBooks: function (id) {
+    return axios.get("/api/books/");
   },
   // Deletes the book with the given id
   deleteBook: function (id) {
